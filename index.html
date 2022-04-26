@@ -77,11 +77,9 @@
         var attempt = 3; // Variable to count number of attempts.
         var username = document.getElementById("username").value;
         var password = document.getElementById("password").value;
-        let page;
         if (username == "caa464" && password == "@Derakesino21"){
-          page = "student_center.html";
           alert ("Login successfully");
-          location.href = page;
+          location.href = "student_center.html";
           return false;
         }
       };
