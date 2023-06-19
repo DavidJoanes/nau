@@ -412,50 +412,50 @@
                     <script language="JavaScript" type="text/javascript" src="/cs/spcssprd/cache/PT_GRIDSCRIPT_win0_MIN_1.js">
                     </script>
                     <script language="JavaScript">
-                    var nResubmit=0;
-                    var nLastAction=0;
-                    var loader=null;
-                    if (typeof(bCleanHtml) == 'undefined')
-                        var bCleanHtml = false;
-                    setupTimeout2();
-                    var postUrl_win0='https://mycolleges.shr.nevada.edu/psc/spcssprd/EMPLOYEE/SA/c/SA_LEARNER_SERVICES.SSS_STUDENT_CENTER.GBL';
-                    function aAction_win0(form, id, params, bAjax, bPrompt, sAjaxTrfUrl, bWarning, sScriptAfter, nTrfURLType)
-                    {
-                    setupTimeout2();
-                    if ((id != '#ICSave'))
-                    processing_win0(1,3000);
-                    aAction0_win0(form, id, params, bAjax, bPrompt, sAjaxTrfUrl, bWarning, sScriptAfter, nTrfURLType);
-                    }
-                    function submitAction_win0(form, id, event, sAjaxTrfUrl, bWarning, sScriptAfter, nTrfURLType)
-                    {
-                    setupTimeout2();
-                    if (!ptCommonObj2.isICQryDownload(form, id))
-                    { processing_win0(1,3000); }
-                    preSubmitProcess_win0(form, id);
-                    var spellcheckpos = id.indexOf('$spellcheck');
-                    if ((spellcheckpos != -1) && (id.indexOf('#KEYA5') != -1))
-                        form.ICAction.value = id.substring(0,spellcheckpos);
-                    else 
-                        form.ICAction.value=id;
-                    var actionName = form.ICAction.value;
-                    form.ICXPos.value=ptCommonObj2.getScrollX();
-                    form.ICYPos.value=ptCommonObj2.getScrollY();
-                    bcUpdater.storeBcDomData();
-                    if ((typeof(bAutoSave) != 'undefined') && bAutoSave)
-                        form.ICAutoSave.value = '1';
-                    if (!ptCommonObj2.isAJAXReq(form, id) && !ptCommonObj2.isPromptReq(id)){
-                    if (nLastAction == 1 && nResubmit > 0) return;
-                    form.ICResubmit.value=nResubmit;
-                    form.submit();
-                    if (!ptCommonObj2.isICQryDownload(form, id))
-                        nResubmit++;
-                    }
-                    else if (ptCommonObj2.isPromptReq(id))
-                        pAction_win0(form, id, arguments[2]);
-                    else
-                        aAction_win0(form, actionName, null, true, false, sAjaxTrfUrl, bWarning, sScriptAfter, nTrfURLType);
-                    cancelBubble(event);
-                    }
+                        var nResubmit=0;
+                        var nLastAction=0;
+                        var loader=null;
+                        if (typeof(bCleanHtml) == 'undefined')
+                            var bCleanHtml = false;
+                        setupTimeout2();
+                        var postUrl_win0='https://mycolleges.shr.nevada.edu/psc/spcssprd/EMPLOYEE/SA/c/SA_LEARNER_SERVICES.SSS_STUDENT_CENTER.GBL';
+                        function aAction_win0(form, id, params, bAjax, bPrompt, sAjaxTrfUrl, bWarning, sScriptAfter, nTrfURLType)
+                        {
+                        setupTimeout2();
+                        if ((id != '#ICSave'))
+                        processing_win0(1,3000);
+                        aAction0_win0(form, id, params, bAjax, bPrompt, sAjaxTrfUrl, bWarning, sScriptAfter, nTrfURLType);
+                        }
+                        function submitAction_win0(form, id, event, sAjaxTrfUrl, bWarning, sScriptAfter, nTrfURLType)
+                        {
+                        setupTimeout2();
+                        if (!ptCommonObj2.isICQryDownload(form, id))
+                        { processing_win0(1,3000); }
+                        preSubmitProcess_win0(form, id);
+                        var spellcheckpos = id.indexOf('$spellcheck');
+                        if ((spellcheckpos != -1) && (id.indexOf('#KEYA5') != -1))
+                            form.ICAction.value = id.substring(0,spellcheckpos);
+                        else 
+                            form.ICAction.value=id;
+                        var actionName = form.ICAction.value;
+                        form.ICXPos.value=ptCommonObj2.getScrollX();
+                        form.ICYPos.value=ptCommonObj2.getScrollY();
+                        bcUpdater.storeBcDomData();
+                        if ((typeof(bAutoSave) != 'undefined') && bAutoSave)
+                            form.ICAutoSave.value = '1';
+                        if (!ptCommonObj2.isAJAXReq(form, id) && !ptCommonObj2.isPromptReq(id)){
+                        if (nLastAction == 1 && nResubmit > 0) return;
+                        form.ICResubmit.value=nResubmit;
+                        form.submit();
+                        if (!ptCommonObj2.isICQryDownload(form, id))
+                            nResubmit++;
+                        }
+                        else if (ptCommonObj2.isPromptReq(id))
+                            pAction_win0(form, id, arguments[2]);
+                        else
+                            aAction_win0(form, actionName, null, true, false, sAjaxTrfUrl, bWarning, sScriptAfter, nTrfURLType);
+                        cancelBubble(event);
+                        }
                     </script>
                     <script language="javascript">
                     var pt_calHeadstyle=" class='PTCALHEAD' "
@@ -1925,32 +1925,34 @@
         </form>
         
         <script language="JavaScript">
-        var bMDTargetStart=false;
-        var bMDTarget=false;
-        if (typeof(setPSTouchHandlerDoc) != 'undefined' && setPSTouchHandlerDoc != null) setPSTouchHandlerDoc ();
-        var nMaxSavedStates=5;
-        bSearchDialog_empty =false;
-        var sHistURL="https://mycolleges.shr.nevada.edu/psc/spcssprd/EMPLOYEE/SA/c/NUI_FRAMEWORK.PT_AGSTARTPAGE_NUI.GBL?page=PT_AGSTARTPAGE_NUI&CONTEXTIDPARAMS=TEMPLATE_ID%3aPTPPNAVCOL&scname=ADMN_SHR_STUDENT_CENTER_NC_CL&PanelCollapsible=Y&PTPPB_GROUPLET_ID=SHR_STUDENT_CENTER_TL_FL&CRefName=SHR_STUDENT_CENTER_TL_FL_1&AJAXTRANSFER=Y";
-        var bCloseModal = false;
-        var bICList = false;
-        var bHtml5Doc = true;
-        var bClearBackState=false;
-        var bPageTransfered=false;
-        var bTransferAnimate=false;
-        var bCleanHtml = true;
-        var bDefer = true;
-        document.deferFldArr_win0 = new Array();
-        document.hiddenFldArr_win0 =new Array('ICType','ICElementNum','ICStateNum','ICAction','ICModelCancel','ICXPos','ICYPos','ResponsetoDiffFrame','TargetFrameName','FacetPath','ICFocus','ICSaveWarningFilter','ICChanged','ICSkipPending','ICAutoSave','ICResubmit','ICSID','ICActionPrompt','ICTypeAheadID','ICBcDomData','ICDNDSrc','ICPanelHelpUrl','ICPanelName','ICPanelControlStyle','ICFind','ICAddCount','ICAppClsData');
-        document.chgFldArr_win0 = new Array();
-        AddToHistory('SHR Student Center', '', 'returntolastpage@0', 'PT_AGSTARTPAGE_NUI', 1, 1, 0, 0,'',0, '', 0);
-        corsHistoryTansaction();
-        var bCleanHtml = true;
-        var bDefer = true;
-        document.hiddenFldArr_win0 =new Array('ICType','ICElementNum','ICStateNum','ICAction','ICModelCancel','ICXPos','ICYPos','ResponsetoDiffFrame','TargetFrameName','FacetPath','ICFocus','ICSaveWarningFilter','ICChanged','ICSkipPending','ICAutoSave','ICResubmit','ICSID','ICActionPrompt','ICTypeAheadID','ICBcDomData','ICDNDSrc','ICPanelHelpUrl','ICPanelName','ICPanelControlStyle','ICFind','ICAddCount','ICAppClsData');
-        document.chgFldArr_win0 = new Array();
-        var bCDATA = false;
-        var bAccessibleLayout = false;
-        var bLoadCompleted = true;
-        </script><div id="divdobackclassic" style="visibility:hidden" aria-hidden="true"><a id="ancdobackclassic" href="javascript:DoBack('win0')" style="visibility:hidden" aria-hidden="true"></a></div>
+            var bMDTargetStart=false;
+            var bMDTarget=false;
+            if (typeof(setPSTouchHandlerDoc) != 'undefined' && setPSTouchHandlerDoc != null) setPSTouchHandlerDoc ();
+            var nMaxSavedStates=5;
+            bSearchDialog_empty =false;
+            var sHistURL="https://mycolleges.shr.nevada.edu/psc/spcssprd/EMPLOYEE/SA/c/NUI_FRAMEWORK.PT_AGSTARTPAGE_NUI.GBL?page=PT_AGSTARTPAGE_NUI&CONTEXTIDPARAMS=TEMPLATE_ID%3aPTPPNAVCOL&scname=ADMN_SHR_STUDENT_CENTER_NC_CL&PanelCollapsible=Y&PTPPB_GROUPLET_ID=SHR_STUDENT_CENTER_TL_FL&CRefName=SHR_STUDENT_CENTER_TL_FL_1&AJAXTRANSFER=Y";
+            var bCloseModal = false;
+            var bICList = false;
+            var bHtml5Doc = true;
+            var bClearBackState=false;
+            var bPageTransfered=false;
+            var bTransferAnimate=false;
+            var bCleanHtml = true;
+            var bDefer = true;
+            document.deferFldArr_win0 = new Array();
+            document.hiddenFldArr_win0 =new Array('ICType','ICElementNum','ICStateNum','ICAction','ICModelCancel','ICXPos','ICYPos','ResponsetoDiffFrame','TargetFrameName','FacetPath','ICFocus','ICSaveWarningFilter','ICChanged','ICSkipPending','ICAutoSave','ICResubmit','ICSID','ICActionPrompt','ICTypeAheadID','ICBcDomData','ICDNDSrc','ICPanelHelpUrl','ICPanelName','ICPanelControlStyle','ICFind','ICAddCount','ICAppClsData');
+            document.chgFldArr_win0 = new Array();
+            AddToHistory('SHR Student Center', '', 'returntolastpage@0', 'PT_AGSTARTPAGE_NUI', 1, 1, 0, 0,'',0, '', 0);
+            corsHistoryTansaction();
+            var bCleanHtml = true;
+            var bDefer = true;
+            document.hiddenFldArr_win0 =new Array('ICType','ICElementNum','ICStateNum','ICAction','ICModelCancel','ICXPos','ICYPos','ResponsetoDiffFrame','TargetFrameName','FacetPath','ICFocus','ICSaveWarningFilter','ICChanged','ICSkipPending','ICAutoSave','ICResubmit','ICSID','ICActionPrompt','ICTypeAheadID','ICBcDomData','ICDNDSrc','ICPanelHelpUrl','ICPanelName','ICPanelControlStyle','ICFind','ICAddCount','ICAppClsData');
+            document.chgFldArr_win0 = new Array();
+            var bCDATA = false;
+            var bAccessibleLayout = false;
+            var bLoadCompleted = true;
+        </script>
+        <div id="divdobackclassic" style="visibility:hidden" aria-hidden="true"><a id="ancdobackclassic" href="javascript:DoBack('win0')" style="visibility:hidden" aria-hidden="true"></a>
+        </div>
     </body>
 </html>
